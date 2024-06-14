@@ -38,7 +38,7 @@ Ao iniciar o script pela primeira vez se as bibliotecas não estiverem intaladas
 
 ### Imagem
 
-![Página Inicial](img/requirements.png)
+![Requirements](img/requirements.png)
 
 ## Página Inicial
 
@@ -48,16 +48,33 @@ A página inicial do projeto apresenta as principais opções disponíveis para 
 
 ![Página Inicial](img/home.png)
 
+## Baixar epísodios
+
+Basta colocar o link do epísodio ou caso queira baixar vários coloque eles separando com virgula
+     ```
+     https://www.anibunker.com/anime/oreimo-episodio-1-legendado , https://www.anibunker.com/anime/gintama-episodio-8-legendado , https://www.anibunker.com/anime/death-note-episodio-7-dublado
+     ```
+
+### Imagem
+
+![Episódio](img/episodio.png)
+
+## Baixar Todos os epísodios de um anime
+
+Basta colocar o link do anime o script vai verificar se ele tem dublagem e vai dar a opção de baixar a versão dublada, legendada ou ambas as versões, se o anime só tiver a versão legendada ou dublada o download e iniciado automaticamente
+
+### Imagem
+
+![Anime](img/anime2.png)
+![Anime](img/anime.png)
 
 ## Organização dos arquivos
-
-### Descrição
 
 Os videos sção salvos em pastas para fácilitar a organização, sendo criada uma pasta para salvar os episódios do anime legendado e pasta para salvar os episódios do anime dublado
 
 ### Imagem
 
-![Página Inicial](img/arquivos.png)
+![Arquivos](img/arquivos.png)
 
 
 ## Contribuições
