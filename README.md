@@ -78,9 +78,7 @@ Este projeto é de código aberto e você é encorajado a contribuir para melhor
 
 ## Autor
 
-Desenvolvido por [E43b](https://github.com/e43b), o Anibunker Downloader visa simplificar o processo de download de animes, proporcionando uma experiência mais acessível e organizada para os fãs de anime.
-
-Este projeto é mantido por [e43b] ([Discord](https://discord.gg/GgBbbjDkXu)).
+Desenvolvido e mantido por [E43b](https://github.com/e43b), o Anibunker Downloader visa simplificar o processo de download de animes, proporcionando uma experiência mais acessível e organizada para os fãs de anime.
 
 ## Links
 
