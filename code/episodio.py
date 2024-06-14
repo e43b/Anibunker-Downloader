@@ -1,7 +1,7 @@
 import os
 import requests
 from bs4 import BeautifulSoup
-from urllib.parse import unquote
+import re
 
 # Função para criar o diretório, se não existir
 def create_directory(path):
@@ -21,12 +21,28 @@ def download_video(url, path):
     else:
         print(f"Erro ao baixar o vídeo de {url}.")
 
+# Função para procurar links alternativos em caso de falha
+def find_alternative_video(url):
+    response = requests.get(url)
+    if response.status_code != 200:
+        return None
+
+    soup = BeautifulSoup(response.content, 'html.parser')
+    scripts = soup.find_all('script')
+
+    rumble_links = []
+    for script in scripts:
+        if script.string:
+            links = re.findall(r'https://[^ ]*cdn\.rumble\.cloud[^ ]*\.mp4', script.string)
+            rumble_links.extend(links)
+
+    return rumble_links[0] if rumble_links else None
+
 # Função para processar os links e baixar os vídeos
 def process_links(links):
     for link in links:
         link = link.strip()  # Remove espaços extras
         if link:
-            # Obter o HTML da página
             response = requests.get(link)
             soup = BeautifulSoup(response.content, 'html.parser')
 
@@ -35,12 +51,19 @@ def process_links(links):
             anime_name = ' '.join(title_tag.split(' ')[:-2])  # Pega todos os termos antes de "episódio x"
             episode_number = title_tag.split(' ')[-1]
             episode_title = soup.find('h4').text.replace(' ', '_')
-            video_url = soup.find('video')['src']
+            video_url = soup.find('video')
 
-            # Substituir espaços por underscores no nome do anime
+            # Se o vídeo não for encontrado, buscar links alternativos
+            if not video_url:
+                print("Vídeo principal não encontrado. Procurando links alternativos...")
+                video_url = find_alternative_video(link)
+                if not video_url:
+                    print(f"Não foi possível encontrar um vídeo para {link}")
+                    continue
+
+            video_url = video_url if isinstance(video_url, str) else video_url['src']
+
             anime_name = anime_name.replace(' ', '_')
-
-            # Verificar se a URL contém "legendado" ou "dublado"
             if 'legendado' in link:
                 version = 'legendado'
             elif 'dublado' in link:
@@ -48,15 +71,11 @@ def process_links(links):
             else:
                 version = ''
 
-            # Criar o caminho do arquivo com a versão (legendado ou dublado)
             directory = f"{anime_name}-{version}" if version else anime_name
             filename = f"{episode_number}-{episode_title}.mp4"
             path = os.path.join(directory, filename)
 
-            # Criar o diretório
             create_directory(directory)
-
-            # Baixar o vídeo
             download_video(video_url, path)
 
             print(f"Vídeo salvo em: {path}")
