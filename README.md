@@ -1,11 +1,14 @@
 # Anibunker-Downloader
 
-O Anibunker Downloader é uma ferramenta em Python que facilita o download de episódios e animes completos do site Anibunker (https://www.anibunker.com/).
+O **Anibunker Downloader** é uma ferramenta desenvolvida para facilitar o download de episódios e animes completos do site [Anibunker](https://www.anibunker.com/). Este projeto foi criado com o objetivo de proporcionar uma maneira simples e eficiente de acessar e salvar conteúdos de anime para visualização offline.
 
 ## Funcionalidades
 
-- **Baixar Episódios Específicos:** Permite baixar episódios específicos de animes disponíveis no Anibunker.
-- **Baixar Anime Completo:** Opção para baixar todos os episódios de um anime de uma vez.
+- **Download de Episódios Específicos:** Permite baixar episódios específicos de animes ao inserir os links correspondentes.
+  
+- **Download Completo de Animes:** Oferece a opção de baixar todos os episódios de um anime, verificando automaticamente a disponibilidade das versões legendada e dublada.
+
+- **Organização Automática:** Os vídeos são salvos em pastas separadas para cada versão (legendada e dublada), facilitando a gestão e organização dos arquivos baixados.
 
 ## Como Usar
 
@@ -69,9 +72,11 @@ Os vídeos são salvos em pastas para facilitar a organização. É criada uma p
 
 ## Contribuições
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue para relatar problemas ou propor melhorias. Pull requests são encorajados.
+Este projeto é de código aberto e você é encorajado a contribuir para melhorias e novas funcionalidades. Sinta-se à vontade para enviar sugestões, relatar problemas ou enviar pull requests através do [repositório oficial no GitHub](https://github.com/e43b/Anibunker-Downloader/).
 
 ## Autor
+
+Desenvolvido por [E43b](https://github.com/e43b), o Anibunker Downloader visa simplificar o processo de download de animes, proporcionando uma experiência mais acessível e organizada para os fãs de anime.
 
 Este projeto é mantido por [e43b] ([Discord](https://discord.gg/GgBbbjDkXu)).
 
