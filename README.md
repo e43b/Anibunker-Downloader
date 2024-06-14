@@ -29,12 +29,12 @@ O Anibunker Downloader é uma ferramenta em Python que facilita o download de ep
 
 ## Bibliotecas
 
-As Bibliotecas necessarias são
+As bibliotecas necessárias são:
      ```
      requests &
      beautifulsoup4
      ```
-Ao iniciar o script pela primeira vez se as bibliotecas não estiverem intaladas vai pedir para verguntar se quer instalar basta dgitar "s" e serã instaladas todas automaticamente
+Ao iniciar o script pela primeira vez, se as bibliotecas não estiverem instaladas, será solicitado para instalá-las. Basta digitar "s" e elas serão instaladas automaticamente.
 
 ![Requirements](img/requirements.png)
 
@@ -44,26 +44,25 @@ A página inicial do projeto apresenta as principais opções disponíveis para 
 
 ![Página Inicial](img/home.png)
 
-## Baixar epísodios
+## Baixar Episódios
 
-Basta colocar o link do epísodio ou caso queira baixar vários coloque eles separando com virgula
-exemplo:
+Para baixar episódios específicos, basta inserir o link do episódio. Se desejar baixar vários episódios, separe os links por vírgula. Exemplo:
      ```
      https://www.anibunker.com/anime/oreimo-episodio-1-legendado , https://www.anibunker.com/anime/gintama-episodio-8-legendado , https://www.anibunker.com/anime/death-note-episodio-7-dublado
      ```
 
 ![Episódio](img/episodio.png)
 
-## Baixar Todos os epísodios de um anime
+## Baixar Todos os Episódios de um Anime
 
-Basta colocar o link do anime o script vai verificar se ele tem dublagem e vai dar a opção de baixar a versão dublada, legendada ou ambas as versões, se o anime só tiver a versão legendada ou dublada o download e iniciado automaticamente
+Insira o link do anime e o script verificará se há uma versão dublada disponível. Você terá a opção de baixar a versão dublada, legendada ou ambas as versões. Se o anime tiver apenas a versão legendada ou dublada, o download será iniciado automaticamente.
 
 ![Anime](img/anime2.png)
 ![Anime](img/anime.png)
 
-## Organização dos arquivos
+## Organização dos Arquivos
 
-Os videos sção salvos em pastas para fácilitar a organização, sendo criada uma pasta para salvar os episódios do anime legendado e pasta para salvar os episódios do anime dublado
+Os vídeos são salvos em pastas para facilitar a organização. É criada uma pasta para os episódios do anime legendado e outra para os episódios do anime dublado.
 
 ![Arquivos](img/arquivos.png)
 
