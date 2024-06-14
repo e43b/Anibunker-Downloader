@@ -1,10 +1,8 @@
 # Anibunker-Downloader
 
-[Discord](https://discord.gg/GgBbbjDkXu)
+[Discord](https://discord.gg/GgBbbjDkXu) [![Views](https://hits.sh/github.com/e43babkr/hits.svg)](https://github.com/e43b/Anibunker-Downloader/)
 
 O **Anibunker Downloader** é uma ferramenta desenvolvida para facilitar o download de episódios e animes completos do site [Anibunker](https://www.anibunker.com/). Este projeto foi criado com o objetivo de proporcionar uma maneira simples e eficiente de acessar e salvar conteúdos de anime para visualização offline.
-
-[![Views](https://hits.sh/github.com/e43babkr/hits.svg)](https://github.com/e43b/Anibunker-Downloader/)
 
 ## Funcionalidades
 
