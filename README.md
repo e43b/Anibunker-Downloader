@@ -47,6 +47,7 @@ A página inicial do projeto apresenta as principais opções disponíveis para 
 ## Baixar epísodios
 
 Basta colocar o link do epísodio ou caso queira baixar vários coloque eles separando com virgula
+exemplo:
      ```
      https://www.anibunker.com/anime/oreimo-episodio-1-legendado , https://www.anibunker.com/anime/gintama-episodio-8-legendado , https://www.anibunker.com/anime/death-note-episodio-7-dublado
      ```
