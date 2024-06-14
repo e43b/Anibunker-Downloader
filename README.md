@@ -27,6 +27,16 @@ O Anibunker Downloader é uma ferramenta em Python que facilita o download de ep
      ```
    - Siga as instruções no menu para escolher entre baixar episódios específicos ou um anime completo.
 
+## Página Inicial
+
+### Descrição
+
+A página inicial do projeto apresenta as principais opções disponíveis para facilitar o download de animes.
+
+### Imagem
+
+![Página Inicial](img/chrome-capture (2).png)****
+
 ## Contribuições
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue para relatar problemas ou propor melhorias. Pull requests são encorajados.
