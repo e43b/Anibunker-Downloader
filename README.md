@@ -35,7 +35,7 @@ A página inicial do projeto apresenta as principais opções disponíveis para 
 
 ### Imagem
 
-![Página Inicial](img/chrome-capture (2).png)
+![Página Inicial](img/home.png)
 
 ## Contribuições
 
